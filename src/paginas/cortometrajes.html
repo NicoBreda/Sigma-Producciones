@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="../multimedia/imagenes/Logo-Sigma.png" alt="Logo-Sigma" class="logo-sigma">
+        <nav class="container">
+          <div class="d-grid gap-2 d-md-block">
+            <ul>
+                <li><a href="../../index.html"><button class="btn btn-primary" type="button">principal</button></a></li>
+                <li><a href="largometrajes.html"><button class="btn btn-primary" type="button">largometrajes</button></a></li>
+                <li><a href="series.html"><button class="btn btn-primary" type="button">series</button></a></li>
+                <li><a href="canal-de-youtube.html"><button class="btn btn-primary" type="button">canal de youtube</button></a></li>
+            </ul>
+          </div>
+        </nav>
+    </header> 
+    <h2>Nuestros cortometrajes</h2>
+
+    <!--Grid System + container + carousel-->
+
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-5 col-sm-12">
+                <p>
+                Nuestros cortometrajes se destacan por disponer de un contenido que cuestione aspectos de la vida y nos haga reflexionar.
+                Los invitamos a que vean algunos de nuestros trabajos. A continuación "Café Solo" y "Estoy bien". 
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-12">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_JCqBSjctZg"
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XeUjIh4HXt0" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe> 
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+           </div>
+        </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   
+</body>
+</html>

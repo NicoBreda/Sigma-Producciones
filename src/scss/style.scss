@@ -1,0 +1,207 @@
+
+/*# sourceMappingURL=style.css.map */
+
+/* Nesting o anidamiento*/
+
+@import 'listas';
+@import 'extend';
+
+section{
+    p{
+        color: darkgoldenrod;
+    }
+}
+
+header{
+
+    nav{
+
+        ul{
+            li{
+                a{
+                    font-family: italic
+                    
+                }
+            }
+        }
+    }
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo-sigma {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto auto;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+address {
+    color: red;
+    margin-top: 80px;
+}
+h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/*imagen de fondo*/
+body {
+    background-image: url("../multimedia/imagenes/—Pngtree—dark\ wall\ background\ material_1146320.jpg");
+}
+
+p {
+    color: cornsilk;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+h5 {
+    color: cornsilk;
+    display: inline-block;
+    padding-left: 800px;
+    font-size: small;
+}
+
+
+.whatsapp {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* Flexbox */
+
+.integrantes {
+    background-color: rgb(75, 75, 75);
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+
+.integrante {
+    flex: 1;
+    flex-wrap: wrap;
+    padding-left: 64px;
+    width: 128px ; 
+    height: 128px;
+}
+
+.footer {
+    display: flex;
+    align-items:baseline 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto auto;
+}
+
+/* Grids */
+/* ## sol fijate esto porque no me aparecen las lineas de las columnas que dividen a cada link*/
+.pages-container{
+    display:grid;
+    border: 2px solid rgb(124, 124, 124);
+    grid-template-rows: 150px;
+    grid-template-columns: repeat(4, 1fr);
+   }
+
+.page-item{
+  display: grid;
+  display: flex;
+  border: 2px solid rgb(124, 124, 124);
+  align-self: center;
+  justify-self: center;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+    address {
+        color: darkgreen;
+    }
+
+}
+
+.foto1, .foto2, .foto3, .foto4, .foto5 {
+    border-radius: 50%;
+}
+
+/* transformación */
+
+.integrante:hover {
+    transform: scale(1.4);
+}
+
+.integrante {
+    transition: all 1s;
+}
+
+.whatsapp:hover {
+    transform: scale(2) rotate(360deg)
+}
+.whatsapp{
+    transition: all 0.5s ;
+}
+
+/* animación*/
+
+.enlace:hover {
+    animation: movimiento 4s;
+    margin: auto;
+}
+
+.page-item:hover {
+    animation: movimiento2 4s ;
+}
+
+/* transición */
+
+@keyframes movimiento {
+
+    from {
+        color: black;
+    }
+
+    to {
+        color: black;
+    }
+
+    50% {
+        border-radius: 25%;
+    }
+
+    25% {
+    font-size: 25px;
+}
+          
+}
+
+@keyframes movimiento2 {
+    
+    10% {
+        background-color: grey;
+    }
+
+    50% {
+        border-radius: 25%;
+    }
+}
+
+
+

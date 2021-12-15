@@ -1,0 +1,31 @@
+$colores: 
+grey,
+green,
+red,
+whitesmoke,
+darkgoldenrod,
+black,
+darkgreen,
+#7c7c7c,
+#4b4b4b,
+cornsilk,
+white; 
+
+.enlace-cortos:active {
+
+    background-color: nth($colores, 2);
+
+}
+
+.enlace-largos:active {
+    background-color: nth($colores, 2);
+         
+}
+
+.enlace-series:active {
+    background-color: nth($colores, 2);
+}
+
+.enlace-youtube:active {
+    background-color: nth($colores, 2);
+}

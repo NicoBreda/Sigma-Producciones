@@ -1,0 +1,36 @@
+
+%boton-exterior {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: grey solid 2px;
+   &:hover{
+    transform: scale(2);
+   }
+}
+
+%botones-paginas {
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.boton-youtube {
+
+    background-color: red;
+    @extend %boton-exterior;
+}
+
+.enlace-cortos  {
+    @extend %botones-paginas;
+}
+
+.enlace-largos {
+    @extend %botones-paginas;
+}
+
+.enlace-series {
+    @extend %botones-paginas;
+}
+
+.enlace-youtube {
+    @extend %botones-paginas;
+}

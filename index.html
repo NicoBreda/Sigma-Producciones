@@ -18,6 +18,7 @@
      <meta property='og:description' content="Web de Sigma Producciones. Conocé a nuestro equipo de profesionales. 
      Conocé nuestros trabajos.Queremos llevar el arte argentino a lo mas alto.">
      <meta property='og:url' content="www.sigmaproducciones.com.ar">
+     <meta property='og:img' content="src/multimedia/imagenes/Logo-Sigma.png">
      
 
     <!-- Bootstrap-->
@@ -30,11 +31,12 @@
     <title>Sigma Producciones - Productora Argentina de Contenido Audiovisual</title>
 </head>
 <body>
+    <header>
+        <img src="src/multimedia/imagenes/Logo-Sigma.png" alt="Logo-Sigma" class="logo-sigma">
+    </header> 
     <main>
     <!-- acá en el header va el logo de SIGMA  --> 
-    <header>
-        <img src="./src/multimedia/imagenes/Logo-Sigma.png" alt="Logo-Sigma" class="logo-sigma">
-    </header> 
+
 
     <p>
         Somos una productora audiovisual Argentina que busca explorar y crear contenido de calidad a nivel 
@@ -45,20 +47,45 @@
 
 <h1>Sigma Producciones somos</h1>
 
-    <section>
-    
-        <nav class="integrantes">   
-            <div class="integrante"><img src="src/multimedia/imagenes/Nicolas.jpg" alt="Nicolas Breda" width="128px" height="128px" class="foto1"></div>
-            <div class="integrante"><img src="src/multimedia/imagenes/Matias.jpg" alt="Matias Sciutto" width="128px" height="128px" class="foto2"></div>
-            <div class="integrante"><img src="src/multimedia/imagenes/Luciano.jpg" alt="Luciano Heredia" width="128px" height="128px" class="foto3"></div>
-            <div class="integrante"><img src="src/multimedia/imagenes/Joaquin.jpg" alt="Joaquin Urrutia" width="128px" height="128px" class="foto4"></div>
-            <div class="integrante"><img src="src/multimedia/imagenes/Valentina.jpg" alt="Valentina Cerati" width="128px" height="128px" class="foto5"></div>   
-        </nav>    
-    </section>
+<section>
+
+<nav class="integrantes">   
+    <div class="integrante">
+        <div class="nico">
+        <img src="src/multimedia/imagenes/Nicolas.jpg" alt="Nicolas Breda" width="128px" height="128px" class="foto1">
+        <h4 class="nico_name">Nicolás</h4>
+    </div>
+    </div>
+    <div class="integrante">
+        <div class="mati">
+            <img src="src/multimedia/imagenes/Matias.jpg" alt="Matias Sciutto" width="128px" height="128px" class="foto2">
+            <h4 class="mati_name">Matías</h4>
+        </div>
+        </div>
+    <div class="integrante">
+        <div class="lucho">
+            <img src="src/multimedia/imagenes/Luciano.jpg" alt="Luciano Heredia" width="128px" height="128px" class="foto3">
+            <h4 class="lucho_name">Luciano</h4>
+        </div>
+    </div>
+    <div class="integrante">
+        <div class="joaco">
+            <img src="src/multimedia/imagenes/Joaquin.jpg" alt="Joaquin Urrutia" width="128px" height="128px" class="foto4">
+            <h4 class="joaco_name">Joaquín</h4>
+        </div>
+    </div>
+    <div class="integrante">
+        <div class="valen">
+            <img src="src/multimedia/imagenes/Valentina.jpg" alt="Valentina Cerati" width="128px" height="128px" class="foto5">
+            <h4 class="valen_name">Valentina</h4>
+        </div>
+    </div>   
+</nav>    
+</section>
 
 <h2>Nuestros Trabajos</h2>
 
-<section class="pages-container">
+<section class="col pages-container">
             <div class="page-item"><a href="./src/paginas/cortometrajes.html" class="enlace-cortos enlace">Cortometrajes</a></div>
             <div class="page-item"><a href="./src/paginas/largometrajes.html" class="enlace-largos enlace">Largometrajes</a></div>
             <div class="page-item"><a href="./src/paginas/series.html" class="enlace-series enlace">Series</a></div>
@@ -68,9 +95,8 @@
 
 <footer class="footer">
     <address>sigmaproducciones@gmail.com</address>
-    <h5 class="derechos">2021 - Todos los derechos reservados</h5>
-    <a href="http://whatsappweb.com"> <img src="./src/multimedia/imagenes/Whatsapp.png" alt="Whatsapp" 
-        width="60px" class="whatsapp"></a>
+         <h5 class="derechos">2021 - Todos los derechos reservados</h5>
+    <a class="link-wapp" href="http://whatsappweb.com"> <img src="./src/multimedia/imagenes/Whatsapp.png" alt="Whatsapp" width="60px" class="whatsapp"></a>
 </footer>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 

@@ -22,9 +22,6 @@
   margin-bottom: 20px;
   border: grey solid 2px;
 }
-.boton-youtube:hover {
-  transform: scale(2);
-}
 
 .enlace-youtube, .enlace-series, .enlace-largos, .enlace-cortos {
   background-color: gray;
@@ -34,7 +31,6 @@
 .boton-youtube {
   background-color: red;
 }
--------------------------------
 
 section p {
   color: darkgoldenrod;
@@ -50,9 +46,12 @@ header nav ul li a {
 }
 
 .logo-sigma {
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
-  margin: auto auto;
+  margin: 20px auto 60px;
+  border-radius: 500px;
+  box-shadow: 1px 1px 10px 8px #fff;
 }
 
 h1 {
@@ -64,7 +63,9 @@ h1 {
 
 address {
   color: red;
-  margin-top: 80px;
+  margin: 20px 0px;
+  display: flex;
+  width: 45%;
 }
 
 h2 {
@@ -77,7 +78,10 @@ h2 {
 
 /*imagen de fondo*/
 body {
-  background-image: url("../multimedia/imagenes/—Pngtree—dark wall background material_1146320.jpg");
+  background-image: url("/public/multimedia/imagenes/imagen-fondo.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
 }
 
 p {
@@ -87,11 +91,18 @@ p {
   padding-left: 20px;
 }
 
-h5 {
+.derechos {
+  width: 45%;
+  position: relative;
   color: cornsilk;
-  display: inline-block;
-  padding-left: 800px;
-  font-size: small;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px 0px;
+}
+
+.link-wapp {
+  display: flex;
+  width: 10%;
 }
 
 .whatsapp {
@@ -105,30 +116,24 @@ h5 {
   background-color: #4b4b4b;
   display: flex;
   justify-content: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .integrante {
-  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  padding-left: 64px;
   width: 128px;
   height: 128px;
 }
 
-.footer {
-  display: flex;
-  align-items: baseline;
-}
-
 .container {
-  display: flex;
   flex-wrap: wrap;
   margin: auto auto;
 }
 
 /* Grids */
-/* ## sol fijate esto porque no me aparecen las lineas de las columnas que dividen a cada link*/
 .pages-container {
   display: grid;
   border: 2px solid #7c7c7c;
@@ -144,14 +149,123 @@ h5 {
   justify-self: center;
 }
 
-/* Mobile */
-@media screen and (max-width: 480px) {
-  address {
-    color: darkgreen;
-  }
-}
 .foto1, .foto2, .foto3, .foto4, .foto5 {
   border-radius: 50%;
+}
+
+.foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover, .foto5:hover {
+  opacity: 0.7;
+}
+
+.nico, .nico_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+}
+
+.nico_name {
+  bottom: 10px;
+  color: #fff;
+}
+
+.nico_name:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mati, .mati_name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+}
+
+.mati_name {
+  bottom: 10px;
+}
+
+.mati_name:hover {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lucho, .lucho_name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+}
+
+.lucho_name {
+  bottom: 10px;
+}
+
+.lucho_name:hover {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+}
+
+.joaco, .joaco_name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+}
+
+.joaco_name {
+  bottom: 10px;
+}
+
+.joaco_name:hover {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+}
+
+.valen, .valen_name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+}
+
+.valen_name {
+  bottom: 10px;
+}
+
+.valen_name:hover {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* transformación */
@@ -169,6 +283,16 @@ h5 {
 
 .whatsapp {
   transition: all 0.5s;
+  bottom: 30px;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px;
 }
 
 /* animación*/
@@ -202,6 +326,168 @@ h5 {
   }
   50% {
     border-radius: 25%;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 768px) {
+  /* HEADER */
+  header {
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+  }
+
+  .logo-sigma {
+    display: flex;
+    width: 100%;
+    margin: 20px auto 60px;
+    border-radius: 500px;
+    box-shadow: 1px 1px 10px 8px #fff;
+    color: darkgrey;
+    filter: invert(1);
+    background-color: darkgrey;
+  }
+
+  /* BODY */
+  main {
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .integrantes {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .div-nico, .div-mati, .div-joaco, .div-valen {
+    margin: 20px auto;
+  }
+
+  /* FOOTER */
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footer .derechos {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .link-wapp {
+    display: none;
+  }
+
+  .whatsapp {
+    display: none;
+    position: relative;
+    width: 10%;
+    left: 90%;
+    bottom: 60px;
+  }
+
+  address {
+    color: darkgreen;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* HEADER */
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* BODY */
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding: 20px;
+  }
+
+  .pages-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: #fff;
+    opacity: 0.9;
+  }
+
+  .page-item {
+    margin: 20px auto;
+    border: none;
+  }
+
+  .enlace {
+    background-color: transparent;
+    border: none;
+    color: black;
+  }
+
+  .integrantes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* FOOTER */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whatsapp {
+    display: none;
+  }
+
+  address {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    filter: brightness(150%);
+    width: 100%;
+  }
+
+  .footer .derechos {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: #fff;
+    width: 100%;
   }
 }
 
